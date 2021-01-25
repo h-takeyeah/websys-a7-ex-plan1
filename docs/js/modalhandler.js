@@ -12,7 +12,7 @@ if (ranking) {
     cancelbtn.addEventListener('click', () => {
       modal.classList.remove('is-active')
     })
-    detailbtn.setAttribute('href', `${document.location.origin}/items/item-${detailbtn.dataset.item_number}.html`)
+    detailbtn.setAttribute('href', `../items/item-${detailbtn.dataset.item_number}.html`)
   })
 
   window.addEventListener('click', (event) => {
