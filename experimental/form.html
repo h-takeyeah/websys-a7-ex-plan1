@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/svgs/regular/smile.svg"
+    type="image/x-icon">
+  <title>本・DVD/BDレンタル・ゲームのT書店</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container" id="orderform">
+      <div class="field">
+        <label class="label">ご注文者様氏名</label>
+        <div class="control">
+          <input class="input" type="text" id="name" name="name" placeholder="書店 一郎">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">お届け先住所</label>
+        <div class="control">
+          <input class="input" type="text" id="address" name="address" placeholder="静岡県浜松市中区城北1-1-1">
+        </div>
+      </div>
+
+      <div class="field">
+        <lavel for="delivery-date" class="label">お届け希望日</lavel>
+        <div class="control">
+          <input class="input" type="date" name="delivery-date" id="delivery-date" value="2020-01-27" min="2021-01-27" max="2021-02-09">
+        </div>
+        <label for="delivery-time" class="label">お届け希望時間</label>
+        <div class="control">
+          <input class="input" type="time" name="delivery-time" id="delivery-time" value="09:00" min="09:00" max="21:00" step="1800">
+        </div>
+      </div>
+
+      <div class="field">
+        <p class="control">
+          <button class="button is-success">入力内容を確認</button>
+        </p>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="../js/header-footer.js"></script>
+  <script type="text/javascript" src="../js/modalhandler.js"></script>
+</body>
+
+</html>

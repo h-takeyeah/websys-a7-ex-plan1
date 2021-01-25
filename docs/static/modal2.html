@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bulma Modal</title>
+
+<!-- Include Bulma CSS -->
+<link rel='stylesheet' href=
+'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css'>
+
+<!-- FontAwesome Library -->
+<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+</script>
+
+<!-- Custom CSS -->
+<style>
+	div.columns {
+	margin-top: 50px;
+	}
+
+	.modal-content {
+	margin-top: 100px;
+	width: 450px;
+	}
+</style>
+</head>
+
+<body>
+<div class='container has-text-centered'>
+	<div class='columns is-mobile is-centered'>
+	<div class='column is-4'>
+		<button class="button is-primary"
+				id='btn'>Click to see modal</button>
+		<div class="modal">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+
+			<div class='box'>
+			<h1 class='title'
+				style='color:green'>
+				Geek for Geeks</h1>
+			<p class='is-family-monospace'>
+				'GeeksforGeeks' is a computer
+				science portal.it was created with
+				a goal in mind to provide well
+				written, well thought and
+				well explained solutions for
+				selected questions. The core team
+				of five super geeks constituting
+				of technology lovers and
+				computer science enthusiasts
+				have been constantly working
+				in this direction .
+			</p>
+			<div class='buttons'>
+				<button class='button is-fullwidth'>
+				Know more about GfG
+				</button>
+			</div>
+			</div>
+		</div>
+		<button class="modal-close is-large"
+				aria-label="close">
+			Model
+		</button>
+		</div>
+	</div>
+	</div>
+</div>
+
+<script>
+	// Bulma does not have JavaScript included,
+	// hence custom JavaScript has to be
+	// written to open or close the modal
+	const modal =
+		document.querySelector('.modal');
+	const btn =
+		document.querySelector('#btn')
+	const close =
+		document.querySelector('.modal-close')
+
+	btn.addEventListener('click',
+						function () {
+	modal.style.display = 'block'
+	})
+
+	close.addEventListener('click',
+						function () {
+	modal.style.display = 'none'
+	})
+
+	window.addEventListener('click',
+							function (event) {
+	if (event.target.className ===
+		'modal-background') {
+		modal.style.display = 'none'
+	}
+	})
+</script>
+</body>
+</html>

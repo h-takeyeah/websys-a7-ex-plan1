@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/svgs/regular/smile.svg" type="image/x-icon">
+  <title>本・DVD/BDレンタル・ゲームのT書店</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h3>あなたにおススメ！ 今週の売れ筋！</h3>
+    </div>
+    <div class="container">
+      <div class="tabs">
+        <ul>
+          <li class="is-active"><a>本</a></li>
+          <li><a href="static/rental.html">DVD/BDレンタル</a></li>
+          <li><a href="static/game.html">ゲーム</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" id="ranking">
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://via.placeholder.com/64" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>1位</strong>
+                <br>
+                1位の本 / 山田太郎 著
+              </p>
+            </div>
+          </div>
+          <button class="button is-primary modal-button">詳細</button>
+        </article>
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">詳細</p>
+            </header>
+            <section class="modal-card-body">
+              <div class="content">
+                <h1>王者の風格 山田太郎著</h1>
+                <p>
+                  「王者の風格」は芥川賞を受賞しました
+                </p>
+              </div>
+            </section>
+            <footer class="modal-card-foot">
+              <a class="button is-link" data-item_number="100">商品詳細ページへ</a>
+              <button class="button cancel">キャンセル</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://via.placeholder.com/64" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>2位</strong>
+                <br>
+                2位じゃダメなんですか / 山田次郎 著
+              </p>
+            </div>
+          </div>
+          <button class="button is-primary modal-button">詳細</button>
+        </article>
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">詳細</p>
+            </header>
+            <section class="modal-card-body">
+              <div class="content">
+                <h1>2位じゃダメなんですか 山田次郎著</h1>
+                <p>
+                  「2位じゃダメなんですか」は直木賞を受賞しました
+                </p>
+              </div>
+            </section>
+            <footer class="modal-card-foot">
+              <a class="button is-link" data-item_number="200">商品詳細ページへ</a>
+              <button class="button cancel">キャンセル</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://via.placeholder.com/64" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>3位</strong>
+                <br>
+                三位一体説 / 山田三郎 著
+              </p>
+            </div>
+          </div>
+          <button class="button is-primary modal-button">詳細</button>
+        </article>
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">詳細</p>
+            </header>
+            <section class="modal-card-body">
+              <div class="content">
+                <h1>三位一体説 山田三郎著</h1>
+                <p>
+                  「三位一体説」は本屋大賞を受賞しました
+                </p>
+              </div>
+            </section>
+            <footer class="modal-card-foot">
+              <a class="button is-link" data-item_number="300">商品詳細ページへ</a>
+              <button class="button cancel">キャンセル</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/header-footer.js"></script>
+  <script type="text/javascript" src="js/modalhandler.js"></script>
+</body>
+
+</html>
