@@ -25,7 +25,7 @@ if (ranking) {
   })
 }
 
-// const orderform = document.getElementById('orderform')
-// if(orderform) {
-//   orderform
-// }
+const orderform = document.getElementById('orderform')
+if(orderform) {
+  orderform
+}

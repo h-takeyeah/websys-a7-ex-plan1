@@ -17,7 +17,7 @@ const footer =
 '<footer class="footer">' +
   '<div class="content has-text-centered">' +
     '<p>' +
-      '©2020 T書店 All rights researved. <em>Powered by <a href="https://bulma.io/">Bulma</a></em>' +
+      '(c) 2020 T書店 All rights researved. <em>Powered by <a href="https://bulma.io/">Bulma</a></em>' +
     '</p>' +
   '</div>' +
 '</footer>'
